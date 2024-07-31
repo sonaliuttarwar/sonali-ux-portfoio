@@ -1,5 +1,11 @@
 html, body {
     margin: 0;
-    padding: 10%;
+    padding: 0;
 }
+
+.portfolio img {
+    width: 100%;
+}
+
+
 
