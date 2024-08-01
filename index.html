@@ -208,13 +208,31 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4.15,
-              spaceBetween: 20,
-          loop: true,
-          autoplay: false,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: false,
-          },
+            spaceBetween: 20,
+            loop: true,
+            autoplay: false,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: false,
+            },
+            breakpoints: {
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+            },
+            1024: {
+            slidesPerView: 4.15,
+            spaceBetween: 20,
+            },
+            1600: {
+            slidesPerView: 5.15,
+            spaceBetween: 20,
+            },
+        },
         });
       </script>
 </body>
