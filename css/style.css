@@ -199,10 +199,16 @@ html, body {
 @keyframes scroll {
     from {
         transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
      }
 
     to {
         transform: translateX(-100%);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
      }
 }
    
@@ -267,17 +273,23 @@ html, body {
     -o-transition: all 0.3s ease-in;
 }
 
-.project-card:hover .card-img {
-    bottom: 0;
-    right: 0;
+@media screen and (min-width:1180px) {
+    .project-card:hover .card-img {
+        bottom: 0;
+        right: 0;
+    }
+
+    .card-2.project-card:hover .card-img {
+        bottom: 0;
+    }
+
+    .card-3.project-card:hover .card-img {
+        right: 0;
+    }
 }
 
 .card-2.project-card .card-img {
     right: 0;
-}
-
-.card-2.project-card:hover .card-img {
-    bottom: 0;
 }
 
 .card-3.project-card .card-img {
@@ -286,10 +298,6 @@ html, body {
 
 .card-3.project-card .card-img img {
     width: 47%;
-}
-
-.card-3.project-card:hover .card-img {
-    right: 0;
 }
 
 .card-3 .card-info ul {
@@ -383,8 +391,13 @@ html, body {
     transition: all 0.3s ease-in;
 }
 
-.map:hover img {
-    transform: scale(1.1);
+@media screen and (min-width:1180px) {
+    .map:hover img {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
 }
 
 .prototype-item {
@@ -469,6 +482,7 @@ html, body {
 } */
 
 /* Responive.css */
+
 @media screen and (max-width: 991px) {
     .sec-hed {
         padding: 0 32px;
@@ -550,6 +564,11 @@ html, body {
         padding: 75px 0;
     }
 
+    .test-item p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
     /* Portfolio */
     .persona {
         width: 50%;
@@ -565,6 +584,7 @@ html, body {
     .perona-row img {
         width: 100%;
         aspect-ratio: 4 / 3;
+        object-fit: cover;
     }
 
     /* Prototype */
@@ -689,7 +709,7 @@ html, body {
 
     /* Prototype */
     .prototype-item {
-        padding: 25px;
+        padding: 25px 25px 0;
         height: auto;
         position: relative;
         display: flex;
@@ -714,7 +734,7 @@ html, body {
 
     .prototype-img {
         width: 350px;
-        height: 230px;
+        height: 160px;
         position: relative;
         margin-top: 30px;
         margin-left: auto;
