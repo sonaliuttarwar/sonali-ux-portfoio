@@ -326,9 +326,13 @@ html, body {
     padding: 54px 30px 0;
 }
 
+.swiper-slide {
+    height: auto;
+}
+
 .test-item {
     background-image: url('../assets/Testimonial-card.png');
-    height: 350px;
+    height: 100%;
     padding: 26px 26px 42px;
     border-radius: 18px;
     border: 1px solid #1C2B35;
