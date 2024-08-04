@@ -642,6 +642,10 @@ html, body {
         padding: 25px;
     }
 
+    .project-card::before {
+        background-size: contain;
+    }
+
     .card-info {
         width: 100%;
     }
