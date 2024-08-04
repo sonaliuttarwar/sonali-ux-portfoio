@@ -189,11 +189,12 @@
 
         <div class="cust-container">
             <div class="prototype-item">
-                <h4><img src="assets/star.svg" alt=""> Prototyping</h4>
-                <p>Turning ideas into interactive prototypes that spark user love</p>
-                <a target="_blank" href="https://www.figma.com/design/0A5JvJuRoI9Ibkyh9DG00h/Interactions?node-id=0-1&t=S8fdlMrnyOJ8moym-0" 
-                class="primary-button">View Interaction <img src="assets/arrow-right.svg" alt=""></a>
-
+                <div>
+                    <h4><img src="assets/star.svg" alt=""> Prototyping</h4>
+                    <p>Turning ideas into interactive prototypes that spark user love</p>
+                    <a target="_blank" href="https://www.figma.com/design/0A5JvJuRoI9Ibkyh9DG00h/Interactions?node-id=0-1&t=S8fdlMrnyOJ8moym-0" 
+                    class="primary-button">View Interaction <img src="assets/arrow-right.svg" alt=""></a>
+                </div>
                 <div class="prototype-img">
                     <img class="prototype1" src="assets/prototype.png" alt="">
                     <img class="prototype2" src="assets/prototype.png" alt="">
@@ -216,15 +217,19 @@
                 clickable: false,
             },
             breakpoints: {
-            640: {
-            slidesPerView: 2,
+                360: {
+            slidesPerView: 1.15,
             spaceBetween: 20,
             },
-            768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            640: {
+            slidesPerView: 2.25,
+            spaceBetween: 20,
             },
-            1024: {
+            992: {
+            slidesPerView: 3.15,
+            spaceBetween: 20,
+            },
+            1025: {
             slidesPerView: 4.15,
             spaceBetween: 20,
             },
