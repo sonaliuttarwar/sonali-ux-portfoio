@@ -401,12 +401,20 @@ html, body {
     width: 211px;
     height: 205px;
     transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
     transform: scale(0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
 }
 
 .persona:hover:before {
     transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
 }
 
 .persona h4 {
@@ -421,10 +429,14 @@ html, body {
     width: 32px;
     margin-right: 10px;
     transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
 }
 
 .persona:hover h4 img {
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
 }
 
 .persona p {
@@ -442,6 +454,8 @@ html, body {
 
 .chips.chips1 {
     transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
     left: -54px;
     position: relative;
     top: 25px;
@@ -452,10 +466,14 @@ html, body {
     top: -68px;
     right: -206px;
     transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
 }
 
 .chips.chip3 {
     transform: rotate(-9.67deg);
+    -webkit-transform: rotate(-9.67deg);
+    -ms-transform: rotate(-9.67deg);
     position: relative;
     left: -150.85px;
     top: 17px;
@@ -463,6 +481,8 @@ html, body {
 
 .chips.chips4 {
     transform: rotate(4.73deg);
+    -webkit-transform: rotate(4.73deg);
+    -ms-transform: rotate(4.73deg);
     top: -42px;
     position: relative;
     right: -142px;
@@ -693,6 +713,27 @@ html, body {
     .prototype-img img {
         width: 85%;
     }
+
+    /* Persona */
+    .persona .chips {
+        font-size: 18px;
+    }
+
+    .chips.chips2 {
+        position: relative;
+        top: -46px;
+        right: -162px;
+    }
+    
+    .chips.chip3 {
+        left: -8px;
+        top: -65px;
+    }
+    
+    .chips.chips4 {
+        top: -114px;
+        right: -98px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -801,6 +842,7 @@ html, body {
         width: 100%;
         padding-right: 0;
         padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .map {
