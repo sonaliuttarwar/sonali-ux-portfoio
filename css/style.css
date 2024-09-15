@@ -837,6 +837,11 @@ html, body {
         width: 350px;
     }
 
+    /* Testimonial */
+    .testimonial-section .swiper {
+        padding: 54px 20px 0 !important;
+    }
+
     /* Portfolio */
     .persona {
         width: 100%;
