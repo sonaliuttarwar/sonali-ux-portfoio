@@ -517,7 +517,7 @@ section {
 /* company logo */
 .sponsor-container {
   margin: -250px auto 0;
-  max-width: 900px;
+  max-width: 70vw;
   overflow: hidden;
   display: flex;
   position: relative;
@@ -1062,6 +1062,11 @@ section {
   padding: 0 10%;
   background-color: #ffffff;
 }
+@media (max-width: 991px) {
+  .img-wrapper {
+    padding: 0;
+  }
+}
 .img-wrapper img {
   max-width: 100%;
 }
@@ -1071,6 +1076,11 @@ section {
   margin: 30px 0 -50px;
   position: relative;
   z-index: 1;
+}
+@media (max-width: 991px) {
+  .iframe-container {
+    padding: 0;
+  }
 }
 
 /* Responive.css */

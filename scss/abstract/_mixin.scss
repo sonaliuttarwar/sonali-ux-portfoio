@@ -3,7 +3,11 @@ $md: 991.99px;
 $sm: 767.99px;
 
 @mixin breakpoint($point) {
-  @if $point == $md {
+  @if $point == $xlg {
+    @media (max-width: 991px) { @content; }
+  }
+
+  @else if $point == $md {
     @media (max-width: 991px) { @content; }
   }
 
