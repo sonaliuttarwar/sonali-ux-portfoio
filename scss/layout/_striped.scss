@@ -11,6 +11,10 @@
         background: #c9fade;
         transform: rotate(-3deg);
         width: 100vw;
+
+        @include breakpoint($sm) {
+            height: 45px;
+        }
     
         .item {
             display: flex;
@@ -20,6 +24,10 @@
             margin: 0;
             height: 57px;
             animation: scroll 10s infinite linear; /* Animation */
+
+            @include breakpoint($sm) {
+                height: 45px;
+            }
         }
         
     }

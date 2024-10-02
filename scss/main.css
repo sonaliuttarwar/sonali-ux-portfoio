@@ -589,6 +589,11 @@ section {
   transform: rotate(-3deg);
   width: 100vw;
 }
+@media (max-width: 767px) {
+  .animated-section .animated-strip {
+    height: 45px;
+  }
+}
 .animated-section .animated-strip .item {
   display: flex;
   align-items: center;
@@ -597,6 +602,11 @@ section {
   margin: 0;
   height: 57px;
   animation: scroll 10s infinite linear; /* Animation */
+}
+@media (max-width: 767px) {
+  .animated-section .animated-strip .item {
+    height: 45px;
+  }
 }
 
 @keyframes scroll {
