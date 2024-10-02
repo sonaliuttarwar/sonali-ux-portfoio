@@ -1238,7 +1238,7 @@ section {
     margin-top: -30px;
   }
   .card-1 .card-img img {
-    width: 450px;
+    width: 330px;
   }
   .card-2.project-card .card-img {
     right: 0;
@@ -1255,7 +1255,7 @@ section {
     margin-top: 0;
   }
   .card-3.project-card .card-img img {
-    width: 350px;
+    width: 250px;
   }
   /* Testimonial */
   .testimonial-section .swiper {
