@@ -15,7 +15,7 @@ html, body {
 
 /* common */
 .gradient-text {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1rem;
     font-weight: 600;
     background: linear-gradient(90deg, rgba(197,252,175,1) 0%, rgba(188,251,234,1) 74%);

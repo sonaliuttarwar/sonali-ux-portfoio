@@ -15,7 +15,7 @@ html, body {
 
 /* common */
 .gradient-text {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1rem;
   font-weight: 600;
   background: linear-gradient(90deg, rgb(197, 252, 175) 0%, rgb(188, 251, 234) 74%);
@@ -659,6 +659,9 @@ section {
   background-color: #2e4746;
   z-index: 1;
 }
+.project-card.card-1 .card-img {
+  bottom: -25px;
+}
 .project-card.card-2 {
   top: 140px;
   z-index: 2;
@@ -693,7 +696,7 @@ section {
   width: 47%;
 }
 .project-card .card-info {
-  width: 400px;
+  width: 430px;
   position: relative;
   z-index: 1;
   color: #ffffff;

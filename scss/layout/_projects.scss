@@ -34,6 +34,10 @@
         top: 100px;
         background-color: #2e4746;
         z-index: 1;
+
+        .card-img {
+            bottom: -25px;
+        }
     }
     
     &.card-2 {
@@ -78,7 +82,7 @@
     }
 
     .card-info {
-        width: 400px;
+        width: 430px;
         position: relative;
         z-index: 1;
         color: #ffffff;
