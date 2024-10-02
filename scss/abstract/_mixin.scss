@@ -1,0 +1,23 @@
+$md: 991.99px;
+$sm: 767.99px;
+
+@mixin breakpoint($point) {
+  @if $point == $md {
+    @media (max-width: 991px) { @content; }
+  }
+
+  @else if $point == $sm {
+    @media (max-width: 767px) { @content; }
+  }
+}
+
+// Transform Mixins
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+    -o-transform: $transforms;
+   -ms-transform: $transforms;
+-webkit-transform: $transforms;
+       transform: $transforms;
+}
+
+ 

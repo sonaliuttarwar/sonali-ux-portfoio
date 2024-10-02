@@ -1,0 +1,320 @@
+/* Responive.css */
+@media screen and (max-width: 991px) {
+    .sec-hed {
+        padding: 0 32px;
+    }
+    
+    .sec-hed p {
+        text-align: center;
+    }
+    
+    .sec-hed h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cust-container {
+        padding: 0 30px;
+    }
+
+    /* welcome banner */
+    .banner::before {
+        background-size: cover;
+    }
+
+    .welcome-banner .hero-img {
+        width: 70vw;
+    }
+
+    .welcome-info {
+        max-width: 588px;
+        margin: -200px auto 0;
+    }
+    /* Project Sction */
+    .project-section {
+        padding: 50px 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 30px auto 0;
+        padding: 30px;
+    }
+
+    .card-1 .card-img img {
+        width: 70%;
+    }
+
+    .card-2 .card-img img {
+        width: 40%;
+    }
+
+    /* .card-3 .card-img img {
+        width: 70%;
+    } */
+
+    /* Animatd strip */
+    .animated-section {
+        padding: 35px 0;
+    }
+
+    .animated-section::before {
+        background-size: cover;
+    }
+
+    .animated-strip {
+        height: 35px;
+    }
+
+    .animated-strip .item {
+        height: 35px;
+    }
+
+    /* Testimonial */
+    .testimonial-section {
+        padding: 50px 0;
+    }
+
+    .test-item p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* Portfolio */
+    .persona {
+        width: 50%;
+        padding-right: 15px;
+    }
+
+    .map {
+        width: 50%;
+        padding-left: 15px;
+        border: none;
+    }
+
+    .perona-row img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    /* Prototype */
+    .prototype-img img {
+        width: 85%;
+    }
+
+    /* Persona */
+    .persona .chips {
+        font-size: 18px;
+    }
+
+    .chips.chips2 {
+        position: relative;
+        top: -46px;
+        right: -162px;
+    }
+    
+    .chips.chip3 {
+        left: -8px;
+        top: -65px;
+    }
+    
+    .chips.chips4 {
+        top: -114px;
+        right: -98px;
+    }
+
+    .know-section {
+        padding: 50px 0;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cust-container {
+        padding: 0 20px;
+    }
+
+    /* welcome banner */
+    .banner {
+        padding: 0 0 30px;
+    }
+
+    .light-effect {
+        top: -80px;
+        width: 100%;
+    }
+
+    .welcome-banner .hero-img {
+        width: 100vw;
+        margin: 40px auto 0;
+    }
+
+    .welcome-info {
+        max-width: 100%;
+        padding: 100px 25px 0;
+    }
+
+    .welcome-info p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* Project */
+    .project-section {
+        padding: 50px 20px;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    .project-card::before {
+        background-size: contain;
+    }
+
+    .card-info {
+        width: 100%;
+    }
+
+    .gradient-text {
+        font-size: 14px;
+    }
+
+    .card-info h2 {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .card-info p {
+        font-size: 14px;
+        padding-right: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .card-img {
+        position: relative;
+        bottom: -25px;
+        right: -25px;
+        margin-top: -30px;
+    }
+
+    .card-1 .card-img img {
+        width: 450px;
+    }
+
+    .card-2.project-card .card-img {
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: -15px;
+    }
+
+    .card-2 .card-img img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .card-3.project-card .card-img {
+        margin-top: 0;
+    }
+
+    .card-3.project-card .card-img img {
+        width: 350px;
+    }
+
+    /* Testimonial */
+    .testimonial-section .swiper {
+        padding: 30px 20px 0 !important;
+    }
+
+    /* Portfolio */
+    .persona {
+        width: 100%;
+        padding-right: 0;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .persona-chips {
+        padding: 10px 0 0 10px;
+    }
+
+    .map {
+        width: 100%;
+        padding-left: 0;
+        border: none;
+    }
+
+    .perona-row {
+        flex-direction: column;
+    }
+
+    .persona h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .persona p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* Prototype */
+    .prototype-item {
+        padding: 25px 25px 0;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prototype-item h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .prototype-item p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .prototype-item .primary-button {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .prototype-img {
+        width: 350px;
+        height: 160px;
+        position: relative;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: -25px;
+    }
+
+    .prototype-img img {
+        width: 100%;
+        top: 0;
+        right: -25px;
+    }
+
+    .know-section {
+        padding: 50px 0;
+        height: 100%;
+    }
+}

@@ -1,0 +1,330 @@
+/* Section 1 */
+.hero-section {
+    background-color: #081822;
+    flex: none;
+    height: 900px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    top: 0;
+
+    &::before {
+        content: '';
+        background-image: url(../assets/stars.png);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        width: 1134px;
+        height: 580px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+
+        @include breakpoint($md) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+/* pattern */
+.pattern-container {
+    inset: 0 0 -100px;
+    opacity: .17;
+    position: fixed;
+    height: 100vh;
+
+    span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: 128px;
+        background-repeat: repeat;
+        background-image: url('../assets/hero-pattern.png');
+        opacity: 0.4;
+        border-radius: 0px;
+    }
+} 
+
+/* light source */
+.light-source {
+    inset: 0 -96px;
+    mix-blend-mode: color-dodge;
+    opacity: .5;
+    position: absolute;
+
+    @include breakpoint($md) {
+        inset: -37px -132px -38px -106px;
+        opacity: 0.75;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-position: center center;
+        object-fit: fill;
+        image-rendering: auto;
+    }
+
+    .light-source-block {
+        position: absolute;
+        border-radius: inherit;
+        inset: 0px;
+    }
+}
+
+/* Circles */
+.circles {
+    inset: -236px 0 -69px -6px;
+    opacity: .25;
+    overflow: hidden;
+    position: absolute;
+
+    @include breakpoint($md) {
+        bottom: -65px;
+        top: -240px;
+    }
+
+    @include breakpoint($sm) {
+        bottom: 0;
+        top: 0;
+    }
+
+    &::after {
+        content: "";
+        border-width: 0;
+        border-color: #c6fca663;
+        border-style: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        border-radius: inherit;
+        pointer-events: none;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 50px;
+        background: linear-gradient(0deg, rgba(5, 18, 24, 1) 0%, rgba(8, 24, 34, 1) 0%, rgba(255, 255, 255, 0) 150%);
+        z-index: 1;
+    }
+
+    .circle {
+        border: 1px solid rgba(198, 252, 166, .39);
+        -webkit-backdrop-filter: blur(62.093017578125px);
+        backdrop-filter: blur(62.093017578125px);
+        background: linear-gradient(180deg, #0b1903 0%, rgba(15, 0, 14, 0) 100%);
+        border-radius: 100%;
+        bottom: -26px;
+        box-shadow: inset -1.2418603897094727px -1.2418603897094727px 1.2418603897094727px #c6fca6, inset -6.209301948547363px 3.725581169128418px 39.739532470703125px #c6fca694, inset 1.2418603897094727px 1.2418603897094727px 1.2418603897094727px #a7fceebd, inset 6.209301948547363px 3.725581169128418px 39.739532470703125px #9dffd445;
+        flex: none;
+        height: 1220px;
+        left: calc(50.23328149300158% - 1220px / 2);
+        opacity: 0.4;
+        position: absolute;
+        width: 1220px;
+
+        @include breakpoint($md) {
+            width: 990px;
+            height: 990px;
+            left: calc(50.23328149300158% - 990px / 2);
+        }
+
+        @include breakpoint($sm) {
+            width: 600px;
+            height: 600px;
+            left: calc(50.23328149300158% - 600px / 2);
+            bottom: 0;
+            top: 0;
+        }
+
+        &.circle2 {
+            transform: scale(0.85);
+            -webkit-transform: scale(0.85);
+            -ms-transform: scale(0.85);
+
+            @include breakpoint($md) {
+                @include transform(scale(0.8));
+            }
+        }
+        
+        &.circle3 {
+            transform: scale(0.67);
+            -webkit-transform: scale(0.67);
+            -ms-transform: scale(0.67);
+
+            @include breakpoint($md) {
+                @include transform(scale(0.6));
+            }
+        }
+        
+        &.circle4 {
+            transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+
+            @include breakpoint($md) {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+/* hero inside */
+.hero-inside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: min-content;
+    justify-content: flex-start;
+    left: 50%;
+    position: absolute;
+    top: 160px;
+    transform: translate(-50%);
+    width: 500px;
+    color: #ffffff;
+
+    @include breakpoint($md) {
+        width: 500px;
+        top: 260px;
+    }
+
+    @include breakpoint($sm) {
+        width: 320px;
+        top: 160px;
+    }
+
+    .hero-me img {
+        position: relative;
+        top: 6px;
+    }
+
+    .hero-badge {
+        backdrop-filter: blur(2px);
+        background-color: #001402cc;
+        border: 1px solid #061e17;
+        border-radius: 12px;
+        box-shadow: inset 0 -6px 0 -5px #0e250f, 0 2px 7px 0 var(--token-6687f0df-4ada-4158-b494-3349d4cd28b5, rgb(8, 24, 34));
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding: 6px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 30px;
+        height: 40px;
+        align-items: center;
+        line-height: 1;
+    
+        span{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: rgb(68, 194, 80);
+            border-radius: 50%;
+            position: relative;
+            margin-right: 14px;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                background-color: rgba(68, 194, 80, 0.341);
+                /* transform: translate(-50%, -50%) scale(2); */
+                border-radius: 50%;
+                transform-origin: center center;
+                animation: popUp 2s linear infinite;
+            }
+        }
+    }
+    
+    @keyframes popUp {
+        0% {
+            transform: translate(-50%, -50%) scale(0.5);
+            opacity: 1;
+        }
+    
+        100% {
+            transform: translate(-50%, -50%) scale(2.5);
+            opacity: 0.7;
+        }
+    }
+
+    h2 {
+        font-family: "Fraunces", serif;
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0;
+        color: #ffffff;
+
+        @include breakpoint($md) {
+            font-size: 40px;
+        }
+
+        @include breakpoint($sm) {
+            font-size: 28px;
+        }
+    }
+    
+    p {
+        font-size: 16px;
+        font-weight: 200;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.6);
+
+        @include breakpoint($md) {
+            padding: 0 20px;
+        }
+
+        @include breakpoint($sm) {
+            padding: 0;
+        }
+        
+    }
+}
+
+
+/* gradient-pattern */
+.gradient-pattern {
+    background: linear-gradient(180deg, rgba(18, 24, 30, 0) -18.549815220254256%, #051218 95.51804331448707%);
+    flex: none;
+    height: 1200px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    @include breakpoint($md) {
+        height: 100vh;
+    }
+}
+
+.top-gradient {
+    background: linear-gradient(180deg, rgb(8, 24, 34), #081822 0%, rgba(14, 28, 34, 0) 100%);
+    flex: none;
+    height: 124px;
+    left: 0;
+    opacity: .74;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

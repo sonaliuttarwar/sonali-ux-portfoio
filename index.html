@@ -13,152 +13,226 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/main.css">
 
    
 </head>
-<body>
-    <!-- section 1 -->
-    <section class="banner">
-        <div class="welcome-banner">
-            <img class="light-effect" src="assets/light-effect.png" alt="">
-            <img class="light-effect" src="assets/light-effect.png" alt="">
-            <img class="hero-img" src="assets/banner.png" alt="">
+<body class="home-page" onload="window.scrollTo(0, 0);">
+    <nav id="navbar-example2" class="custom-header navbar navbar-light bg-light ps-3">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="">
         </div>
-        <div class="welcome-info">
-            <p>
-                I am a UI/UX designer with 2.6 years of experience, based in Pune. My professional journey focuses on making products simple and user-friendly. I believe in testing assumptions quickly to save time and resources. Working closely with clients, I help turn their ideas into user-tested products. I prioritize essential features and user needs to create Minimum Viable Products (MVPs), allowing for continuous improvement based on user feedback.
-            </p>
-            <div class="d-flex">
-                <div class="star-icon">
-                    <img src="assets/star.svg" alt="">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="primary-button" href="./assets/Sonali Uttarwar - UIUX Designer.pdf" target="_blank">Resume</a>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <!-- New Banner -->
+         <section class="hero-section" id="home">
+            <div class="pattern-container">
+                <span></span>
+            </div>
+            <div class="light-source">
+                <div class="light-source-block">
+                <img src="assets/pattern-smoke.png" alt=""></div>
+            </div>
+            <div class="circles">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                <div class="circle circle4"></div>
+            </div>
+            <div class="gradient-pattern">
+                <div class="top-gradient"></div>
+            </div>
+            <div class="hero-inside">
+                <div class="hero-me">
+                    <img src="assets/sonali.svg" alt="">
+                    <div class="hero-badge">
+                        <span></span>Available for opportunities
+                    </div>
                 </div>
-                <div class="data">
-                <h4>Currently Learning</h4>
-                <span>Diving deep into UX to unleash the potential of bringing designs to life! </span>
+                <h2>
+                    Welcome to
+                    my digital humble abode
+                </h2>
+                <p>I’m an independent designer.
+                    My interest lies in brand experience, and user experience.</p>
             </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- animated strip -->
-     <section class="animated-section" >
-        <div class="animated-strip">
-            <img class="item" src="assets/marque.png" alt="">
-            <img class="item" src="assets/marque.png" alt="">
-            <img class="item" src="assets/marque.png" alt="">
-            <img class="item" src="assets/marque.png" alt="">
-        </div>
-     </section>
+         <!-- company logo strip -->
+    <div class="sponsor-fluid">
+        <div class="sponsor-container">
+            <div class="group">
+                <div class="sponsor-item"><img src="assets/1.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/2.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/3.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/4.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/5.svg" alt=""></div>
+                <div class="sponsor-item"><img class="small-logo" src="assets/6.svg" alt=""></div>
+            </div>
 
-    <!-- section 2 -->
-     <section class="project-section">
-        <div class="sec-hed">
-            <p class="gradient-text">Curated work</p>
-            <h1>Project Highlights</h1>
+            <div aria-hidden class="group">
+                <div class="sponsor-item"><img src="assets/1.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/2.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/3.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/4.svg" alt=""></div>
+                <div class="sponsor-item"><img src="assets/5.svg" alt=""></div>
+                <div class="sponsor-item"><img class="small-logo" src="assets/6.svg" alt=""></div>
+            </div>
         </div>
+    </div>
 
-        <!-- Card 1 -->
-        <div class="project-card card-1">
-            <div class="card-info">
-                <span class="gradient-text">cookingenie . 2024</span>
-                <h2>Building a dashboard for Super Admin</h2>
-                <p>Resolving the challenges faced by Super Admins when managing the CookinGenie platform.</p>
-                <a target="_blank" href="https://www.figma.com/design/y8MJMgQ8no7uZAqZVypUN8/Cookingenie---Case-Study?node-id=1353-4054&t=0rdOv3sM5Mm55YIT-0" 
-                class="primary-button">View Case Study <img src="assets/arrow-right.svg" alt=""></a>
+        <!-- section 2 -->
+        <section class="project-section" id="projects">
+            <div class="sec-hed">
+                <p class="gradient-text">Curated work</p>
+                <h1>Project Highlights</h1>
             </div>
-            <div class="card-img">
-                <img src="assets/card1.png" alt="">
-            </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="project-card card-2">
-            <div class="card-info">
-                <span class="gradient-text">fusion . 2024</span>
-                <h2>Enhancing the photo uploading flow of Fusion</h2>
-                <p>A solution that allows users to easily capture photos and upload them directly from their mobile devices. </p>
-                <a target="_blank" href="https://www.figma.com/design/De3zGQjirdxE3PhCAcEsyu/Fusion?node-id=165-2709&t=B6aebYBxYjAE9jee-4" 
-                class="primary-button">View Case Study <img src="assets/arrow-right.svg" alt=""></a>
+            <!-- Card 1 -->
+            <div class="project-card card-1">
+                <div class="card-info">
+                    <span class="gradient-text">cookingenie . 2024</span>
+                    <h2>Building a dashboard for Super Admin</h2>
+                    <p>Resolving the challenges faced by Super Admins when managing the CookinGenie platform.</p>
+                    <a target="_blank" href="https://www.figma.com/design/y8MJMgQ8no7uZAqZVypUN8/Cookingenie---Case-Study?node-id=1353-4054&t=0rdOv3sM5Mm55YIT-0" 
+                    class="primary-button">View Case Study <img src="assets/arrow-right.svg" alt=""></a>
+                </div>
+                <div class="card-img">
+                    <img src="assets/card1.png" alt="">
+                </div>
             </div>
-            <div class="card-img">
-                <img src="assets/card2.png" alt="">
-            </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="project-card card-3">
-            <div class="card-info">
-                <span class="gradient-text">Brainingcamp . 2024</span>
-                <h2>Redesigned the website to improve performance</h2>
-                <ul>
-                    <li>
-                        <p><img src="assets/Check-circle.svg" alt="">
-                            New user signups increased by 32%.</p>
-                    </li>
-                    <li>
-                        <p><img src="assets/Check-circle.svg" alt="">
-                            Engagement increased by 20%.</p>
-                    </li>
-                </ul>
-                <a target="_blank" href="https://www.figma.com/design/kQDqTLTFA9Ku7FW1IK4NIl/Brainingcamp?node-id=40-51117&t=j7MLFcM6LgS1HgNy-0" 
-                class="primary-button">View Case Study <img src="assets/arrow-right.svg" alt=""></a>
+            <!-- Card 2 -->
+            <div class="project-card card-2">
+                <div class="card-info">
+                    <span class="gradient-text">fusion . 2024</span>
+                    <h2>Enhancing the photo uploading flow of Fusion</h2>
+                    <p>A solution that allows users to easily capture photos and upload them directly from their mobile devices. </p>
+                    <a target="_blank" href="https://www.figma.com/design/De3zGQjirdxE3PhCAcEsyu/Fusion?node-id=165-2709&t=B6aebYBxYjAE9jee-4" 
+                    class="primary-button">View Case Study <img src="assets/arrow-right.svg" alt=""></a>
+                </div>
+                <div class="card-img">
+                    <img src="assets/card2.png" alt="">
+                </div>
             </div>
-            <div class="card-img">
-                <img src="assets/card3.png" alt="">
-            </div>
-        </div>
-     </section>
 
-      <!-- section 3 -->
-      <section class="testimonial-section">
-        <div class="baloon-effect">
-            <img src="assets/bollon-effect.png" alt="">
-        </div>
-        <div class="sec-hed">
-            <p class="gradient-text">testimonial of few folks</p>
-            <h1>world on the street about me</h1>
-        </div>
-            <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            <!-- Card 3 -->
+            <div class="project-card card-3">
+                <div class="card-info">
+                    <span class="gradient-text">Brainingcamp . 2024</span>
+                    <h2>Redesigned the website to improve performance</h2>
+                    <ul>
+                        <li>
+                            <p><img src="assets/Check-circle.svg" alt="">
+                                New user signups increased by 32%.</p>
+                        </li>
+                        <li>
+                            <p><img src="assets/Check-circle.svg" alt="">
+                                Engagement increased by 20%.</p>
+                        </li>
+                    </ul>
+                    <a target="_blank" href="https://www.figma.com/design/kQDqTLTFA9Ku7FW1IK4NIl/Brainingcamp?node-id=40-51117&t=j7MLFcM6LgS1HgNy-0" 
+                    class="primary-button">View Case Study <img src="assets/arrow-right.svg" alt=""></a>
+                </div>
+                <div class="card-img">
+                    <img src="assets/card3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+         <!-- animated strip -->
+         <section class="animated-section" >
+            <div class="animated-strip">
+                <img class="item" src="assets/marque.png" alt="">
+                <img class="item" src="assets/marque.png" alt="">
+                <img class="item" src="assets/marque.png" alt="">
+                <img class="item" src="assets/marque.png" alt="">
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section class="testimonial-section" id="testimonial">
+            <div class="sec-hed">
+                <p class="gradient-text">testimonial of few folks</p>
+                <h1>world on the street about me</h1>
+            </div>
+            <div class="test-swiper">
+                <div class="group">
                     <div class="test-item">
                         <h3>Rahul Singh Rautela</h3>
                         <div class="designtion">Associate UX Designer <span>@ Taazaa</span></div>
                         <p>Sonali is an excellent collaborator who brings valuable insights and fosters teamwork effortlessly.</p>
                     </div>
-                </div>
-                <div class="swiper-slide">
                     <div class="test-item">
                         <h3>Rishabh Mittal</h3>
                         <div class="designtion">Senior UX Designer <span>@ Taazaa</span></div>
                         <p>It’s been great working with Sonali—her designs are always user-centric and well thought out.</p>
                     </div>
-                </div>
-                <div class="swiper-slide">
                     <div class="test-item">
                         <h3>Kristen Perhach</h3>
                         <div class="designtion">Marketing Director <span>@ Brainingcamp</span></div>
                         <p>Sonali is a top-notch team player, always proactive, professional, and committed to honing her skills. She consistently meets deadlines, works hard, and clearly communicates her insights.</p>
                     </div>
-                </div>
-                <div class="swiper-slide">
                     <div class="test-item">
                         <h3>Mayank Garg</h3>
                         <div class="designtion">UX Designer <span>@ Taazaa</span></div>
                         <p>Sonali has a sharp eye for detail and works seamlessly with the team, making her a great colleague.</p>
                     </div>
-                </div>
-                <div class="swiper-slide">
                     <div class="test-item">
                         <h3>Babita Chettri</h3>
                         <div class="designtion">Senior Graphic Designer <span>@ Taazaa</span></div>
                         <p>Creative and dependable, Sonali consistently focuses on enhancing the user experience in all her work.</p>
                     </div>
+                    <div class="test-item">
+                        <h3>Tanman Singh</h3>
+                        <div class="designtion">Graphic Designer <span>@ Taazaa</span></div>
+                        <p>Sonali has a knack for translating client requirements into clear, user-friendly designs. She’s a pleasure to work with.</p>
+                    </div>
                 </div>
-                <div class="swiper-slide">
+
+                <div aria-hidden class="group">
+                    <div class="test-item">
+                        <h3>Rahul Singh Rautela</h3>
+                        <div class="designtion">Associate UX Designer <span>@ Taazaa</span></div>
+                        <p>Sonali is an excellent collaborator who brings valuable insights and fosters teamwork effortlessly.</p>
+                    </div>
+                    <div class="test-item">
+                        <h3>Rishabh Mittal</h3>
+                        <div class="designtion">Senior UX Designer <span>@ Taazaa</span></div>
+                        <p>It’s been great working with Sonali—her designs are always user-centric and well thought out.</p>
+                    </div>
+                    <div class="test-item">
+                        <h3>Kristen Perhach</h3>
+                        <div class="designtion">Marketing Director <span>@ Brainingcamp</span></div>
+                        <p>Sonali is a top-notch team player, always proactive, professional, and committed to honing her skills. She consistently meets deadlines, works hard, and clearly communicates her insights.</p>
+                    </div>
+                    <div class="test-item">
+                        <h3>Mayank Garg</h3>
+                        <div class="designtion">UX Designer <span>@ Taazaa</span></div>
+                        <p>Sonali has a sharp eye for detail and works seamlessly with the team, making her a great colleague.</p>
+                    </div>
+                    <div class="test-item">
+                        <h3>Babita Chettri</h3>
+                        <div class="designtion">Senior Graphic Designer <span>@ Taazaa</span></div>
+                        <p>Creative and dependable, Sonali consistently focuses on enhancing the user experience in all her work.</p>
+                    </div>
                     <div class="test-item">
                         <h3>Tanman Singh</h3>
                         <div class="designtion">Graphic Designer <span>@ Taazaa</span></div>
@@ -166,55 +240,111 @@
                     </div>
                 </div>
             </div>
-        </div>
-     </section>
-
-      <!-- section 4 -->
-      <section class="know-section">
-        <div class="sec-hed">
-            <p class="gradient-text">beyond portfolio</p>
-            <h1>let's know more about me</h1>
-        </div>
-
-        <div class="cust-container">
-            <div class="perona-row">
-                <div class="persona">
-                    <h4><img src="assets/star.svg" alt=""> My Persona</h4>
-                    <p>Know me as a person</p>
-                    <!-- <img src="assets/persona.png" alt=""> -->
-                     <div class="persona-chips">
-                        <div class="chips chips1">Kitchen hobbyist 👩‍🍳</div>
-                        <div class="chips chips2">Dancer 💃</div>
-                        <div class="chips chip3">Traveller ✈️</div>
-                        <div class="chips chips4">Nature Lover  🌴🌊⛰️</div>
-                     </div>
-                </div>
-                <div class="map">
-                    <img src="assets/map.png" alt="">
+                <!-- Swiper -->
+            <div class="swiper mySwiper" style="display: none;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="test-item">
+                            <h3>Rahul Singh Rautela</h3>
+                            <div class="designtion">Associate UX Designer <span>@ Taazaa</span></div>
+                            <p>Sonali is an excellent collaborator who brings valuable insights and fosters teamwork effortlessly.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="test-item">
+                            <h3>Rishabh Mittal</h3>
+                            <div class="designtion">Senior UX Designer <span>@ Taazaa</span></div>
+                            <p>It’s been great working with Sonali—her designs are always user-centric and well thought out.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="test-item">
+                            <h3>Kristen Perhach</h3>
+                            <div class="designtion">Marketing Director <span>@ Brainingcamp</span></div>
+                            <p>Sonali is a top-notch team player, always proactive, professional, and committed to honing her skills. She consistently meets deadlines, works hard, and clearly communicates her insights.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="test-item">
+                            <h3>Mayank Garg</h3>
+                            <div class="designtion">UX Designer <span>@ Taazaa</span></div>
+                            <p>Sonali has a sharp eye for detail and works seamlessly with the team, making her a great colleague.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="test-item">
+                            <h3>Babita Chettri</h3>
+                            <div class="designtion">Senior Graphic Designer <span>@ Taazaa</span></div>
+                            <p>Creative and dependable, Sonali consistently focuses on enhancing the user experience in all her work.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="test-item">
+                            <h3>Tanman Singh</h3>
+                            <div class="designtion">Graphic Designer <span>@ Taazaa</span></div>
+                            <p>Sonali has a knack for translating client requirements into clear, user-friendly designs. She’s a pleasure to work with.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="cust-container" style="display: none;">
-            <div class="prototype-item">
-                <div>
-                    <h4><img src="assets/star.svg" alt=""> Prototyping</h4>
-                    <p>Turning ideas into interactive prototypes that spark user love</p>
-                    <a target="_blank" href="https://www.figma.com/design/0A5JvJuRoI9Ibkyh9DG00h/Interactions?node-id=0-1&t=S8fdlMrnyOJ8moym-0" 
-                    class="primary-button">View Interaction <img src="assets/arrow-right.svg" alt=""></a>
-                </div>
-                <div class="prototype-img">
-                    <img class="prototype1" src="assets/prototype.png" alt="">
-                    <img class="prototype2" src="assets/prototype.png" alt="">
-    
+        <!-- section 4 -->
+        <section class="know-section" id="about-me">
+            <div class="sec-hed">
+                <p class="gradient-text">beyond portfolio</p>
+                <h1>let's know more about me</h1>
+            </div>
+
+            <div class="cust-container">
+                <div class="perona-row">
+                    <div class="persona">
+                        <h4><img src="assets/star.svg" alt=""> My Persona</h4>
+                        <p>Know me as a person</p>
+                        <!-- <img src="assets/persona.png" alt=""> -->
+                        <div class="persona-chips">
+                            <div class="chips chips1">Kitchen hobbyist 👩‍🍳</div>
+                            <div class="chips chips2">Dancer 💃</div>
+                            <div class="chips chip3">Traveller ✈️</div>
+                            <div class="chips chips4">Nature Lover  🌴🌊⛰️</div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <img src="assets/map.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-     </section>
 
+            <div class="cust-container" style="display: none;">
+                <div class="prototype-item">
+                    <div>
+                        <h4><img src="assets/star.svg" alt=""> Prototyping</h4>
+                        <p>Turning ideas into interactive prototypes that spark user love</p>
+                        <a target="_blank" href="https://www.figma.com/design/0A5JvJuRoI9Ibkyh9DG00h/Interactions?node-id=0-1&t=S8fdlMrnyOJ8moym-0" 
+                        class="primary-button">View Interaction <img src="assets/arrow-right.svg" alt=""></a>
+                    </div>
+                    <div class="prototype-img">
+                        <img class="prototype1" src="assets/prototype.png" alt="">
+                        <img class="prototype2" src="assets/prototype.png" alt="">
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div class="container">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/Mc7J2C1NY033suClz2FSIJ/Cookingenie-Card-Sorting?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+            </div>
+        </section> -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        };
+
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4.15,
             spaceBetween: 20,
@@ -247,6 +377,21 @@
             },
         },
         });
+
+        // active class
+        document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove active class from all links
+                navLinks.forEach(item => item.classList.remove('active'));
+                
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    });
       </script>
 </body>
 </html>

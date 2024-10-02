@@ -1,0 +1,57 @@
+/* company logo */
+.sponsor-container {
+    margin: -250px auto 0;
+    max-width: 900px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+
+    @include breakpoint($md) {
+        margin: -120px auto 160px;
+        max-width: 700px;
+    }
+
+    @include breakpoint($sm) {
+        margin: -370px auto 30px;
+    }
+
+    >* {
+        flex: 0 0 100%;
+    }
+
+    .group {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        /* Add padding to the right to create a gap between the last and first card. */
+        padding-right: 50px;
+        will-change: transform;
+        /* We should be nice to the browser - let it know what we're going to animate. */
+        animation: sponsorScrolling 20s linear infinite;
+    }
+
+    .sponsor-item {
+        img {
+            // width: 150px;
+            opacity: 0.6; 
+
+            &.small-logo {
+                width: auto;
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+@keyframes sponsorScrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

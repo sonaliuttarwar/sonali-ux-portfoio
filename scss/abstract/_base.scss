@@ -1,0 +1,62 @@
+html, body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    background-color: #081822;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.cust-container {
+    max-width: 826px;
+    margin: 0 auto;
+}
+
+/* common */
+.gradient-text {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(197,252,175,1) 0%, rgba(188,251,234,1) 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+.sec-hed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec-hed p {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 4px;
+}
+
+.sec-hed h1 {
+    font-family: "Fraunces", serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    color: #ffffff;
+}
+
+section {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* Project pages */
+.img-wrapper {
+    overflow: auto;
+    padding: 0 10%;
+    background-color: #ffffff;
+}
+
+.img-wrapper img {
+    width: 100%;
+}

@@ -1,0 +1,88 @@
+/* Header */
+.custom-header {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    z-index: 2;
+    background-color: transparent !important;
+    height: 44px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) -1px 2px 12px 0px;
+    border: 1px solid rgb(83, 80, 80);
+    padding: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    @include breakpoint($md) {
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        border-radius: 24px;
+        opacity: 1;
+        border: none;
+        height: 50px;
+        padding-left: 12px;
+    }
+
+    .logo {
+        display: none;
+
+        @include breakpoint($md) {
+            display: block;
+            position: absolute;
+        }
+    }
+
+    .nav {
+        height: 100%;
+
+        @include breakpoint($md) {
+            margin-left: auto;
+        }
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint($md) {
+            display: none;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            color: #ffffff;
+          letter-spacing: 1px;
+          font-weight: 600;
+          padding: 0 12px;
+          transition: all 0.3s linear;
+          -webkit-transition: all 0.3s linear;
+          -ms-transition: all 0.3s linear;
+
+          &:hover, &.active {
+            background: linear-gradient(90deg, rgba(197,252,175,1) 0%, rgba(188,251,234,1) 74%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        &:last-child {
+            padding: 2px;
+            margin-left: 12px;
+            display: flex;
+
+            @include breakpoint($md) {
+                margin-left: auto;
+            }
+
+            .primary-button {
+                width: 100px !important;
+                height: 34px !important;
+                height: 100% !important;
+                border-radius: 44px !important;
+            } 
+        }
+    }
+}
