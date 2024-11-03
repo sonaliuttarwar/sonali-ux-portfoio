@@ -564,6 +564,14 @@ section {
     transform: translateX(-100%);
   }
 }
+@-webkit-keyframes sponsorScrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /* section 2 */
 .animated-section {
   overflow: hidden;
@@ -1073,14 +1081,13 @@ section {
 
 .iframe-container {
   padding: 0 74px;
-  margin: 30px 0 -50px;
+  margin: 30px 0;
   position: relative;
   z-index: 1;
 }
 @media (max-width: 991px) {
   .iframe-container {
     padding: 0;
-    margin: 30px 0 -15px;
   }
 }
 

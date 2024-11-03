@@ -15,12 +15,11 @@
 
 .iframe-container {
     padding: 0 74px;
-    margin: 30px 0 -50px;
+    margin: 30px 0;
     position: relative;
     z-index: 1;
 
     @include breakpoint($xlg) {
         padding: 0;
-        margin: 30px 0 -15px;
     }
 }
