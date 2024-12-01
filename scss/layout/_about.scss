@@ -56,7 +56,7 @@
     font-size: 20px;
     line-height: 32px;
     font-weight: 600;
-} 
+}
 
 .persona h4 img {
     width: 32px;
@@ -137,9 +137,14 @@
 
 .map {
     width: 372px;
+    height: 309px;
     overflow: hidden;
     border-radius: 18px;
     border: 1px solid #343434;
+
+    iframe {
+        filter: grayscale(100%) invert(92%) contrast(83%);
+    }
 }
 
 .map img {
@@ -235,3 +240,76 @@
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
 } */
+
+.about-me-sec {
+    color: #ffffff;
+    margin-bottom: 80px;
+
+    .gradient-text {
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    h1 {
+        font-family: "Fraunces", serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 20px 0;
+    }
+
+    p {
+        &:not(:first-child) {
+            font-size: 18px;
+        }
+
+        &:last-child {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    .profile-img {
+        background-color: #ffffff;
+        padding: 15px 15px 60px;
+        position: relative;
+        @include transform(rotate(9deg));
+        transform-origin: bottom right;
+        margin-top: 40px;
+
+        @include breakpoint($md) {
+            transform-origin: center;
+            width: 250px;
+            margin: 50px auto;
+        }
+    }
+
+    .profile-tooltip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: -33px;
+        right: 20px;
+        @include transform(rotate(-9deg));
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -37px;
+            left: -19px;
+            width: 20px;
+            height: 20px;
+            background-image: url("../assets/cursor.svg");
+            background-repeat: no-repeat;
+            background-size: 20px;
+        }
+
+        span {
+            background: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 14px;
+            color: #000000;
+            font-weight: 500;
+        }
+    }
+}

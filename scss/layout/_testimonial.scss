@@ -1,6 +1,6 @@
 /* section 4 */
 .testimonial-section {
-    padding: 110px 0 75px;
+    padding: 110px 0 0;
 }
 
 .swiper {
@@ -79,10 +79,10 @@
 
 @keyframes scrolling {
     0% {
-        transform: translateX(0);
+        @include transform(translateX(0));
     }
 
     100% {
-        transform: translateX(-100%);
+        @include transform(translateX(-100%));
     }
 }

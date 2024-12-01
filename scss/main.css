@@ -752,7 +752,7 @@ section {
 
 /* section 4 */
 .testimonial-section {
-  padding: 110px 0 75px;
+  padding: 110px 0 0;
 }
 
 .swiper {
@@ -823,9 +823,17 @@ section {
 
 @keyframes scrolling {
   0% {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
@@ -968,9 +976,13 @@ section {
 
 .map {
   width: 372px;
+  height: 309px;
   overflow: hidden;
   border-radius: 18px;
   border: 1px solid #343434;
+}
+.map iframe {
+  filter: grayscale(100%) invert(92%) contrast(83%);
 }
 
 .map img {
@@ -1064,6 +1076,79 @@ section {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
 } */
+.about-me-sec {
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+.about-me-sec .gradient-text {
+  text-transform: uppercase;
+  margin: 0;
+}
+.about-me-sec h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.about-me-sec p:not(:first-child) {
+  font-size: 18px;
+}
+.about-me-sec p:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.about-me-sec .profile-img {
+  background-color: #ffffff;
+  padding: 15px 15px 60px;
+  position: relative;
+  -moz-transform: rotate(9deg);
+  -o-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
+  transform: rotate(9deg);
+  transform-origin: bottom right;
+  margin-top: 40px;
+}
+@media (max-width: 991px) {
+  .about-me-sec .profile-img {
+    transform-origin: center;
+    width: 250px;
+    margin: 50px auto;
+  }
+}
+.about-me-sec .profile-tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: -33px;
+  right: 20px;
+  -moz-transform: rotate(-9deg);
+  -o-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  -webkit-transform: rotate(-9deg);
+  transform: rotate(-9deg);
+}
+.about-me-sec .profile-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -37px;
+  left: -19px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/cursor.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+.about-me-sec .profile-tooltip span {
+  background: linear-gradient(99.6983deg, rgb(198, 252, 166) 0%, rgba(167, 252, 238, 0.74) 100%);
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
 /* Project pages */
 .img-wrapper {
   overflow: auto;
